@@ -2,10 +2,9 @@
 <html lang="en">
 
 <head>
-
-  
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Accounta</title>
 
   <title>Accounta</title>
   <meta content="" name="description">
@@ -27,1269 +26,686 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
- <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
-
-
-
-  <!---- Template Main CSS File -->
+  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <style>
+    /* Modern design updates */
+    body {
+      font-family: 'Jost', sans-serif;
+    }
+    
+    section {
+      padding: 30px 0; /* Reduced padding */
+    }
+    
+    .section-title {
+      margin-bottom: 20px; /* Reduced margin */
+      padding-bottom: 0; /* Reduce spacing */
+    }
+    
+    .section-title h2 {
+      margin-bottom: 10px; /* Reduce space below title */
+      padding-bottom: 10px; /* Reduce space */
+    }
+    
+    .section-title p {
+      margin-bottom: 5px; /* Reduce space */
+    }
+    
+    /* Improved Since 1998 styling */
+    .logo-text {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+    
+    .since-text {
+      font-size: 14px;
+      color: #ffffff;
+      background-color: #47b2e4;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-left: 10px;
+      letter-spacing: 0.5px;
+    }
+    
+    .year-number {
+      font-weight: 800;
+      color: #fff;
+    }
+    
+    .hero-content {
+      padding-right: 20px;
+    }
+    
+    .founder-img {
+      border-radius: 50%;
+      border: 4px solid #47b2e4;
+      max-width: 180px;
+      margin-bottom: 15px;
+    }
+    
+    .founder-name {
+      font-weight: 600;
+      color: #37517e;
+      margin-bottom: 10px;
+    }
+    
+    .founder-title {
+      font-style: italic;
+      color: #6c757d;
+      margin-bottom: 15px;
+    }
+    
+    .service-card {
+      transition: all 0.3s ease;
+      height: 100%;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Improved demo section */
+    .clients {
+      height: auto;
+      padding: 20px 0;
+      background-color: #f8f9fa;
+    }
+    
+    .demo-container {
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+    
+    .demo-header {
+      padding: 12px 15px;
+      background-color: #37517e;
+      color: white;
+      font-weight: 600;
+      font-size: 16px;
+      text-align: center;
+    }
+    
+    .demo-content {
+      padding: 15px;
+    }
+    
+    .demo-button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+      text-align: center;
+      color: white;
+    }
+    
+    .demo-button:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+    
+    .demo-link {
+      display: block;
+      padding: 8px 15px;
+      color: #333;
+      font-weight: 500;
+      transition: all 0.2s;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .demo-link:last-child {
+      border-bottom: none;
+    }
+    
+    .demo-link:hover {
+      background-color: #f5f5f5;
+      color: #47b2e4;
+    }
+    
+    .about-content {
+      display: flex;
+      align-items: center;
+    }
+    
+    .contact .info {
+      border-radius: 5px;
+    }
+    
+    .php-email-form {
+      border-radius: 5px;
+    }
+    .founder-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .founder-img {
+    width: 4000px;
+    height: 200px;
+    object-fit: cover;
+    border: 4px solid #47b2e4;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .founder-img:hover {
+    transform: scale(1.05);
+  }
+  
+  .founder-name {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #37517e;
+    font-weight: 600;
+  }
+  
+  .founder-title {
+    color: #6c757d;
+    font-style: italic;
+  }
+  
+  @media (max-width: 768px) {
+    .founder-img {
+      width: 200px;
+      height: 200px;
+    }
+  }
 
-  <!-- =======================================================
-  * Template Name: Arsha - v4.9.1
-  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  #accounta-software .software-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #accounta-software .software-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+  }
+  
+  #accounta-software .features .badge {
+    font-weight: 400;
+    opacity: 0.8;
+  }
+  
+  #accounta-software .btn-outline-primary {
+    border-width: 2px;
+  }
+  
+  @media (max-width: 768px) {
+    #accounta-software .software-item {
+      text-align: center;
+    }
+    
+    #accounta-software .software-item .col-md-3 {
+      margin-bottom: 15px;
+    }
+  }
+
+  #software-solutions .software-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+  }
+
+  #software-solutions .software-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+  }
+
+  #software-solutions .software-icon {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+  }
+
+  #software-solutions .badge {
+    font-weight: 400;
+  }
+
+  @media (max-width: 768px) {
+    #software-solutions .software-card {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    #software-solutions .software-card > div {
+      text-align: center;
+    }
+    
+    #software-solutions .software-icon {
+      margin-bottom: 15px;
+      margin-right: 0 !important;
+    }
+  }
+  /* Larger Navbar Buttons */
+.navbar .nav-link {
+  font-size: 17px;  /* Increase font size from default */
+  padding: 12px 18px !important;  /* Add more padding around text */
+  font-weight: 500;  /* Make font slightly bolder */
+  transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #47b2e4;
+  transform: translateY(-2px);
+}
+
+/* Smaller Hero Section */
+#hero {
+  height: 70vh;  /* Reduce from 80vh to 70vh */
+  min-height: 450px;  /* Reduce minimum height */
+}
+
+#hero h1 {
+  font-size: 38px;  /* Slightly smaller heading */
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+#hero h2 {
+  font-size: 18px;  /* Slightly smaller subheading */
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+/* Make hero image slightly smaller */
+#hero .hero-img img {
+  max-height: 320px;  /* Reduce from potentially larger size */
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  #hero {
+    height: auto;
+    padding: 100px 0 60px 0;
+  }
+  
+  #hero h1 {
+    font-size: 32px;
+  }
+  
+  #hero h2 {
+    font-size: 16px;
+  }
+  
+  .navbar .nav-link {
+    padding: 10px 15px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    padding: 80px 0 50px 0;
+  }
+  
+  .navbar-mobile .nav-link {
+    font-size: 16px;
+    padding: 12px 20px !important;
+  }
+}
+  .hero-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Primary button - Ticket */
+.hero-button.ticket {
+  background: linear-gradient(135deg, #9d4edd 0%, #7b2cbf 100%);
+  color: white;
+}
+
+.hero-button.ticket:hover {
+  background: linear-gradient(135deg, #b54fff 0%, #8a3dd0 100%);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* YouTube button */
+.hero-button.youtube {
+  background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+  color: white;
+  margin-left: 15px;
+}
+
+.hero-button.youtube:hover {
+  background: linear-gradient(135deg, #ff3333 0%, #e60000 100%);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.hero-button i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .hero-button {
+    padding: 10px 22px;
+    font-size: 14px;
+  }
+  
+  .hero-button.youtube {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-button {
+    padding: 10px 18px;
+    font-size: 13px;
+  }
+}
+    /* Responsive improvements */
+    @media (max-width: 768px) {
+      .about-content {
+        flex-direction: column;
+      }
+      
+      .founder-section {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      
+      .section-title h2 {
+        font-size: 26px;
+      }
+  }
+  </style>
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center">
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center">
+    <h1 class="logo me-auto">
+      <a href="index.html" class="logo-text">
+        Accounta <span class="since-text">Since <span class="year-number">1998</span></span>
+      </a>
+    </h1>
 
-      <h1 class="logo me-auto"><a href="index.html">Accounta</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <!-- <li><a class="nav-link   scrollto" href="#portfolio">Portfolio</a></li> -->
-          <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
-          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li> -->
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <!--<li><a class="getstarted scrollto" href="#about">Download Demo</a></li>-->
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>A Complete Buisness Solution Software</h1>
-          <h2>Our team consists of skilled developers who specialize in providing solutions to your problems.</h2>
-          <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="https://ticketing.accounta.app/#/" class="ticket">OPEN TICKET 24*7</a>
-            
-            <a href="https://www.youtube.com/@sanjaysaraf1928/featured" class="youtube"><img src="assets/img/youtubelogo.png" alt="Logo">Subscribe Now!</a>
-            <!--<a href="https://ticketing.accounta.app/#/" class="btn-get-started scrollto">Download Demo</a>-->
-            <!--<a href="https://www.youtube.com/watch?v=cc7SOZmXkuY" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>-->
-          </div>
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
-        </div>
-      </div>
-    </div>
-
-  </section><!-- End Hero -->
-
-
-    
-
-    <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients section-bg">
-      <div class="container">
-        <div class="clicktxt">
-          <h3>Click To Watch Demo:-</h3>
-        </div>
-
-        <div class="row" data-aos="zoom-in">
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                WHOLESALE CLOTH
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=m59yZf7f-rc">MASTER+ENTRY</a></li>
-                <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=rfKz5GbDG-w">REORT+UTILITY</a></li>
-                <!--<li><a class="dropdown-item" href="#">Something else here</a></li>-->
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <div class="dropdown2">
-              <button  class="btn2  type="button data-bs-toggle="dropdown" aria-expanded="false">
-                RETAIL(BARCODE)
-              </button>
-              <!--<ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>-->
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <div class="dropdown">
-              <button class="btn3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                TEXTILE AGENCY
-              </button>
-              <!--<ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>-->
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <div class="dropdown">
-              <button class="btn4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                AUTO SPARES
-              </button>
-              <!--<ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>-->
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <div class="dropdown">
-              <button class="btn5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                RETAIL TRADE
-              </button>
-              <!--<ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>-->
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <div class="dropdown">
-              <button class="btn6" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                FMCG(FAST.)
-              </button>
-              <!--<ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>-->
-              </ul>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section><!-- End Cliens Section -->
-
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>About Us</h2>
-        </div>
-
-        <div class="row content">
-          <div class="col-lg-6">
-            <p>
-              We at Diginet Computers are here to help you with issues relating to our software requirements.
-            </p>
-            <ul>
-              <li><i class="ri-check-double-line"></i> Single and Multiple User Accounting Softwares </li>
-              <li><i class="ri-check-double-line"></i> Websites and Web applications tailored to User needs.</li>
-              <li><i class="ri-check-double-line"></i> According to user demands, Android/iOS mobile applications.</li>
-            </ul>
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0">
-            <p>
-              Through our home brand market-leading software named <b>ACCOUNTA</b>, a complete solution to all your accounting needs from Ledger Entry, Sale Bills to GST Filling, E-way Bills, Takada and many more, we have seized the industry from the very root retail counters to wholesale merchants as well as FMCG or distributors, agencies and manufacturers.
-            </p>
-            <!--<a href="#" class="btn-learn-more">Download Demo Today</a>-->
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Us Section -->
-
-    <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us section-bg">
-      <div class="container-fluid" data-aos="fade-up">
-
-        <div class="row">
-
-          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
-
-            <div class="content">
-              <h3>Why should you choose <strong>Accounta ?</strong></h3>
-              <p>
-                ACCOUNTA is unlike any other accounting software because it offers a unique combination of features that set it apart and make it in demand in the industry.
-              </p>
-            </div>
-
-            <div class="accordion-list">
-              <ul>
-                <li>
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span>Multiple User Access<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
-                    <p>
-                      The software allows you to create many users and establish hierarchies of users according to their roles, so you are not limited to creating just one.
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span>One tool for all your Accounting needs<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                     Ledger Entry, Sale Bill, GST Filling, e-way bills, takada, Stock entry, Purchase Bill, Barcode generation and many more.
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span>Windows as well as Mobile App<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                      The services provided aren't only restricted to one platform; you may use the software on your desktop or laptop as well as your smartphone.
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>04</span>A Cloud-Ready Software<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                      Our software's cloud compatibility feature allows you to access it from any location and on any device.
-                    </p>
-                  </div>
-                </li>
-
-              </ul>
-            </div>
-
-          </div>
-
-          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
-        </div>
-
-      </div>
-    </section><!-- End Why Us Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <!-- <section id="skills" class="skills">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/skills.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-
-            <div class="skills-content">
-
-              <div class="progress">
-                <span class="skill">HTML <i class="val">100%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">CSS <i class="val">90%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">JavaScript <i class="val">75%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">Photoshop <i class="val">55%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-
-      </div> -->
-    <!-- </section>End Skills Section -->
-
-    <!-- =======  mobile Services Section ======= -->
-        <section id="services" class="services section-bg">
-            <div class="container" data-aos="fade-up">
-      
-              <div class="section-title">
-                <h2> OUR SERVICES</h2>
-                <p>In addition to providing you with <strong>Accounta</strong> , the industry-leading accounting software,<br><strong> Diginet Computers</strong> also provides a wide range of software services, some of which are listed below.</p>
-              </div>
-
-          <div class="row" >
-              
-              <div class="col-xs-12 col-sm-6 col-md-4">
-                  <div class="" >
-                      <div class="mainflip flip-0">
-                          <div class="frontside">
-                              <div class="card">
-                                  <div class="card-body text-center">
-                                      <p><img class=" img-fluid" src="assets/img/Our Services/OS1.jpeg" alt="card image"></p>
-                                      <h4 class="card-title">MOBILE SERVICES</h4>
-                                      <p class="card-text">Accounta provide diffrent types of <b>Mobile Applications</b> & <b>Accounting Mobile Software</b> .</p>
-                                      <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="backside">
-                              <div class="card">
-                                  <div class="card-body text-center mt-4">
-                                      <h4 class="card-title">MOBILE SERVICE</h4>
-                                      <p class="card-text">A Complete Business Solution Software.</p>
-                                      <ul class="list-inline">
-                                          <li class="list-inline-item">
-                                              <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                  <i class="fa fa-facebook"></i>
-                                              </a>
-                                          </li>
-                                          <li class="list-inline-item">
-                                              <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                  <i class="fa fa-twitter"></i>
-                                              </a>
-                                          </li>
-                                          <li class="list-inline-item">
-                                              <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                  <i class="fa fa-skype"></i>
-                                              </a>
-                                          </li>
-                                          <li class="list-inline-item">
-                                              <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                  <i class="fa fa-google"></i>
-                                              </a>
-                                          </li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              
-              
-              <div class="col-xs-12 col-sm-6 col-md-4">
-                  <div class="" ontouchstart="this.classList.toggle('hover');">
-                      <div class="mainflip">
-                          <div class="frontside">
-                              <div class="card">
-                                  <div class="card-body text-center">
-                                      <p><img class=" img-fluid" src="assets/img/Our Services/OS2.jpeg" alt="card image"></p>
-                                      <h4 class="card-title">CLOUD SYSTEM</h4>
-                                      <p class="card-text">Accounta provide <b>Cloud System Solution</b> for any where around the Glob.</p>
-                                      <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="backside">
-                              <div class="card">
-                                  <div class="card-body text-center mt-4">
-                                      <h4 class="card-title">CLOUD SYSTEM</h4>
-                                      <p class="card-text">A Complete Business Solution Software.</p>
-                                      <ul class="list-inline">
-                                          <li class="list-inline-item">
-                                              <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                  <i class="fa fa-facebook"></i>
-                                              </a>
-                                          </li>
-                                          <li class="list-inline-item">
-                                              <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                  <i class="fa fa-twitter"></i>
-                                              </a>
-                                          </li>
-                                          <li class="list-inline-item">
-                                              <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                  <i class="fa fa-skype"></i>
-                                              </a>
-                                          </li>
-                                          <li class="list-inline-item">
-                                              <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                  <i class="fa fa-google"></i>
-                                              </a>
-                                          </li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              
-              
-              <div class="col-xs-12 col-sm-6 col-md-4">
-                  <div class="" ontouchstart="this.classList.toggle('hover');">
-                      <div class="mainflip">
-                          <div class="frontside">
-                              <div class="card">
-                                  <div class="card-body text-center">
-                                      <p><img class=" img-fluid" src="assets/img/Our Services/OS3.jpeg" alt="card image"></p>
-                                      <h4 class="card-title">WEB APPLICATION</h4>
-                                      <p class="card-text">Accounta provide  Web Application for all type of <b>Business</b> Needs. </p>
-                                      <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="backside">
-                              <div class="card">
-                                  <div class="card-body text-center mt-4">
-                                      <h4 class="card-title">WEB APPLICATION</h4>
-                                      <p class="card-text">A Complete Business Solution Software.</p>
-                                      <ul class="list-inline">
-                                          <li class="list-inline-item">
-                                              <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                  <i class="fa fa-facebook"></i>
-                                              </a>
-                                          </li>
-                                          <li class="list-inline-item">
-                                              <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                  <i class="fa fa-twitter"></i>
-                                              </a>
-                                          </li>
-                                          <li class="list-inline-item">
-                                              <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                  <i class="fa fa-skype"></i>
-                                              </a>
-                                          </li>
-                                          <li class="list-inline-item">
-                                              <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                  <i class="fa fa-google"></i>
-                                              </a>
-                                          </li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              
-              
-              <div class="col-xs-12 col-sm-6 col-md-4">
-                  <div class="" ontouchstart="this.classList.toggle('hover');">
-                      <div class="mainflip">
-                          <div class="frontside">
-                              <div class="card">
-                                  <div class="card-body text-center">
-                                      <p><img class=" img-fluid" src="assets/img/Our Services/OS4.jpg" alt="card image"></p>
-                                      <h4 class="card-title">ACCOUNTING SOFTWARE</h4>
-                                      <p class="card-text">Accounta provide Software For <b>Billing</b> & <b>Accounting</b>.</p>
-                                      <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="backside">
-                              <div class="card">
-                                  <div class="card-body text-center mt-4">
-                                      <h4 class="card-title">ACCOUNTING SOFTWARE</h4>
-                                      <p class="card-text">A Complete Business Solution Software.</p>
-                                      <ul class="list-inline">
-                                          <li class="list-inline-item">
-                                              <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                  <i class="fa fa-facebook"></i>
-                                              </a>
-                                          </li>
-                                          <li class="list-inline-item">
-                                              <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                  <i class="fa fa-twitter"></i>
-                                              </a>
-                                          </li>
-                                          <li class="list-inline-item">
-                                              <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                  <i class="fa fa-skype"></i>
-                                              </a>
-                                          </li>
-                                          <li class="list-inline-item">
-                                              <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                  <i class="fa fa-google"></i>
-                                              </a>
-                                          </li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              
-              <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="assets/img/Our Services/OS5.jpeg" alt="card image"></p>
-                                    <h4 class="card-title">CUSTOMIZE AS PER NEED</h4>
-                                    <p class="card-text">Accounta also provides <b>OnDemand Customize Software</b> & <b>Mobile App</b> & <b>Web Based Solutions</b>.</p>
-                                    <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">CUSTOMIZE AS PER NEED</h4>
-                                    <p class="card-text">A Complete Business Solution Software.</p>
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                <i class="fa fa-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                <i class="fa fa-skype"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                <i class="fa fa-google"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div
-        </div>
-      </div>
-    </div>
-    </section>
-  
-
-
-    <!--<section id="services" class="services section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Services</h2>
-          <p>In addition to providing you with <strong>Accounta</strong> , the industry-leading accounting software,<br><strong> Diginet Computers</strong> also provides a wide range of software services, some of which are listed below.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Accounta</a></h4>
-              <p>A market leading Accounting Software.</p>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">Web Applications</a></h4>
-              <p>We create industry-ready web applications in accordance with client specifications.</p>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4><a href="">Android/iOS apps</a></h4>
-              <p>One stop solution for all your mobile application requirements.</p>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-layer"></i></div>
-              <h4><a href="">Al -a- Carte</a></h4>
-              <p>We will develop any concept you have or any requirements you have for any form of software.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><-- End Services Section -->
-
-      <!-- =======Accounta  Services Section ======= -->
-
-
-      <section id="services2" class="services section-bg">
-        <div class="container" data-aos="fade-up">
-  
-          <div class="section-title">
-            <h2>OUR ACCOUNTA SOFTWARE</h2>
-            <p>In addition to providing you with <strong>Accounta</strong> , the industry-leading accounting software,<br><strong> Diginet Computers</strong> also provides a wide range of software services, some of which are listed below.</p>
-          </div>
-
-      <div class="row">
-          
-          <div class="col-xs-12 col-sm-6 col-md-4">
-              <div class="" >
-                  <div class="mainflip flip-0">
-                      <div class="frontside">
-                          <div class="card">
-                              <div class="card-body text-center">
-                                  <p><img class=" img-fluid" src="assets/img/Accounta Services/AS1.jpg" alt="card image"></p>
-                                  <h4 class="card-title">WHOLESALE CLOTH</h4>
-                                  <p class="card-text">A Complete Business Solution Software for <b>WholeSale Cloth merchants</b> .</p>
-                                  <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="backside">
-                          <div class="card">
-                              <div class="card-body text-center mt-4">
-                                  <h4 class="card-title">WHOLESALE CLOTH</h4>
-                                  <p class="card-text">A Comlete Business Solution Software.</p>
-                                  <ul class="list-inline">
-                                      <li class="list-inline-item">
-                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                              <i class="fa fa-facebook"></i>
-                                          </a>
-                                      </li>
-                                      <li class="list-inline-item">
-                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                              <i class="fa fa-twitter"></i>
-                                          </a>
-                                      </li>
-                                      <li class="list-inline-item">
-                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                              <i class="fa fa-skype"></i>
-                                          </a>
-                                      </li>
-                                      <li class="list-inline-item">
-                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                              <i class="fa fa-google"></i>
-                                          </a>
-                                      </li>
-                                  </ul>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          
-          
-          <div class="col-xs-12 col-sm-6 col-md-4">
-              <div class="" ontouchstart="this.classList.toggle('hover');">
-                  <div class="mainflip">
-                      <div class="frontside">
-                          <div class="card">
-                              <div class="card-body text-center">
-                                  <p><img class=" img-fluid" src="assets/img/Accounta Services/AS2.jpeg" alt="card image"></p>
-                                  <h4 class="card-title">TEXTILE AGENCY</h4>
-                                  <p class="card-text">A Complete Business Solution Software for <b>Textile Agents</b>.</p>
-                                  <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="backside">
-                          <div class="card">
-                              <div class="card-body text-center mt-4">
-                                  <h4 class="card-title">TEXTILE AGENCY</h4>
-                                  <p class="card-text">A Complete Business Solution Software .</p>
-                                  <ul class="list-inline">
-                                      <li class="list-inline-item">
-                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                              <i class="fa fa-facebook"></i>
-                                          </a>
-                                      </li>
-                                      <li class="list-inline-item">
-                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                              <i class="fa fa-twitter"></i>
-                                          </a>
-                                      </li>
-                                      <li class="list-inline-item">
-                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                              <i class="fa fa-skype"></i>
-                                          </a>
-                                      </li>
-                                      <li class="list-inline-item">
-                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                              <i class="fa fa-google"></i>
-                                          </a>
-                                      </li>
-                                  </ul>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          
-          
-          <div class="col-xs-12 col-sm-6 col-md-4">
-              <div class="" ontouchstart="this.classList.toggle('hover');">
-                  <div class="mainflip">
-                      <div class="frontside">
-                          <div class="card">
-                              <div class="card-body text-center">
-                                  <p><img class=" img-fluid" src="assets/img/Accounta Services/AS3.jpg" alt="card image"></p>
-                                  <h4 class="card-title">RETAIL TRADE(BARCODE)</h4>
-                                  <p class="card-text">A Complete Business Solution Software for <b>Retail Traders</b> .</p>
-                                  <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="backside">
-                          <div class="card">
-                              <div class="card-body text-center mt-4">
-                                  <h4 class="card-title">RETAIL TRADE(BARCODE)</h4>
-                                  <p class="card-text">A Complete Business Solution Software .</p>
-                                  <ul class="list-inline">
-                                      <li class="list-inline-item">
-                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                              <i class="fa fa-facebook"></i>
-                                          </a>
-                                      </li>
-                                      <li class="list-inline-item">
-                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                              <i class="fa fa-twitter"></i>
-                                          </a>
-                                      </li>
-                                      <li class="list-inline-item">
-                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                              <i class="fa fa-skype"></i>
-                                          </a>
-                                      </li>
-                                      <li class="list-inline-item">
-                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                              <i class="fa fa-google"></i>
-                                          </a>
-                                      </li>
-                                  </ul>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          
-          
-          <div class="col-xs-12 col-sm-6 col-md-4">
-              <div class="" ontouchstart="this.classList.toggle('hover');">
-                  <div class="mainflip">
-                      <div class="frontside">
-                          <div class="card">
-                              <div class="card-body text-center">
-                                  <p><img class=" img-fluid" src="assets/img/Accounta Services/AS4.jpeg" alt="card image"></p>
-                                  <h4 class="card-title">AUTO SPARES</h4>
-                                  <p class="card-text">A Complete Business Solution Software for <b>Auto Spares</b>.</p>
-                                  <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="backside">
-                          <div class="card">
-                              <div class="card-body text-center mt-4">
-                                  <h4 class="card-title">AUTO SPARES</h4>
-                                  <p class="card-text">A Complete Business Solution Software .</p>
-                                  <ul class="list-inline">
-                                      <li class="list-inline-item">
-                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                              <i class="fa fa-facebook"></i>
-                                          </a>
-                                      </li>
-                                      <li class="list-inline-item">
-                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                              <i class="fa fa-twitter"></i>
-                                          </a>
-                                      </li>
-                                      <li class="list-inline-item">
-                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                              <i class="fa fa-skype"></i>
-                                          </a>
-                                      </li>
-                                      <li class="list-inline-item">
-                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                              <i class="fa fa-google"></i>
-                                          </a>
-                                      </li>
-                                  </ul>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          
-            <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="" ontouchstart="this.classList.toggle('hover');">
-                <div class="mainflip">
-                    <div class="frontside">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <p><img class=" img-fluid" src="assets/img/Accounta Services/AS5.jpg" alt="card image"></p>
-                                <h4 class="card-title">FMCG(FAST MOVING..)</h4>
-                                <p class="card-text">A Complete Business Solution Software for <b>Fast-Moving Consumer Goods (FMCG) Industry: Definition, Types, and Profitability</b>.</p>
-                                <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="backside">
-                        <div class="card">
-                            <div class="card-body text-center mt-4">
-                                <h4 class="card-title">FMCG(FAST MOVING..)</h4>
-                                <p class="card-text">A Complete Business Solution Software.</p>
-                                <ul class="list-inline">
-                                    <li class="list-inline-item">
-                                        <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                            <i class="fa fa-skype"></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                            <i class="fa fa-google"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+        <li><a class="nav-link scrollto" href="#about">About</a></li>
+        <li><a class="nav-link scrollto" href="#services2">Softwares</a></li>
+        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
   </div>
-</div>
-         
+</header>
+
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 d-flex flex-column justify-content-center pt-2 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+        <div class="hero-content">
+          <h1>A Complete Business Solution Software</h1>
+          <h2>Our team consists of skilled developers who specialize in providing solutions to your problems since 1998.</h2>
+          <div class="d-flex mt-4">
+            <a href="https://ticketing.accounta.app/#/" class="hero-button ticket">
+              <i class="bi bi-ticket-perforated"></i>OPEN TICKET 24*7
+            </a>
+            <a href="https://www.youtube.com/@sanjaysaraf1928/featured" class="hero-button youtube">
+              <i class="bi bi-youtube"></i>Subscribe Now!
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2 hero-img text-center" data-aos="zoom-in" data-aos-delay="200">
+        <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+      </div>
+    </div>
+  </div>
 </section>
 
-
-
-
-      <!-- ======= End Accounta  Services Section ======= -->
-
-
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="row">
-          <div class="col-lg-9 text-center text-lg-start">
-            <h3>Automate your Accounting Process Right Now.</h3>
-            <p> With our fully automated softwares, you can completely automate your accounting process and fulfil all of your accounting requirements at your fingertips.
-              <br>
-            <b> <i> Hurry Up !! </i></b>
-              <br>
-            </p>
-          </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="https://ticketing.accounta.app/#/">Open a Ticket Now</a>
-          </div>
-        </div>
-
+  <!-- ======= About Us Section ======= -->
+  <section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>About Us</h2>
       </div>
-    </section><!-- End Cta Section -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <!-- <section id="portfolio" class="portfolio">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      <div class="row content">
+        <div class="col-lg-4 founder-section">
+          <div class="text-center founder-image-container">
+            <img src="assets/img/MYPIC.jpeg" alt="Mr. Sanjay Kumar Saraf" class="founder-img">
+            <h4 class="founder-name">Mr. Sanjay Kumar Saraf</h4>
+            <p class="founder-title"><b>Founder & CEO</b></p>
+          </div>
         </div>
-
-        <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-          <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".filter-app">App</li>
-          <li data-filter=".filter-card">Card</li>
-          <li data-filter=".filter-web">Web</li>
-        </ul>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End Portfolio Section -->
-
-    <!-- ======= Team Section ======= -->
-    <!-- <section id="team" class="team section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Team</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-       <div class="row">
-          <div class="col-lg-6">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-          <!--<div class="col-lg-6 mt-4 mt-lg-0">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
-              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div> 
-
-          <div class="col-lg-6 mt-4 mt-lg-0">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
-              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
-              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section> -->
-     <!--End Team Section -->
-
-    <!-- ======= Pricing Section ======= -->
-    <!-- <section id="pricing" class="pricing">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Pricing</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="box">
-              <h3>Free Plan</h3>
-              <h4><sup>$</sup>0<span>per month</span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-              </ul>
-              <a href="#" class="buy-btn">Get Started</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="box featured">
-              <h3>Business Plan</h3>
-              <h4><sup>$</sup>29<span>per month</span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
-              </ul>
-              <a href="#" class="buy-btn">Get Started</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="box">
-              <h3>Developer Plan</h3>
-              <h4><sup>$</sup>49<span>per month</span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
-              </ul>
-              <a href="#" class="buy-btn">Get Started</a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>End Pricing Section -->
-
-    <!-- ======= Frequently Asked Questions Section ======= -->
-    <!-- <section id="faq" class="faq section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Frequently Asked Questions</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="faq-list">
+        
+        <div class="col-lg-8">
+          <p>
+            We at Diginet Data System are here to help you with issues relating to our software requirements. Established in 1998, we have decades of experience in delivering quality software solutions.
+          </p>
           <ul>
-            <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
-                <p>
-                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="500">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
-                </p>
-              </div>
-            </li>
-
+            <li><i class="ri-check-double-line"></i> <b>Single and Multi User</b>  Accounting Softwares. </li>
+            <li><i class="ri-check-double-line"></i> <b>Cloud Ready</b> Softwares with <b>Backup</b> feature.</li>
+            <li><i class="ri-check-double-line"></i> According to user demands, <b>Android/iOS mobile</b> applications.</li>
           </ul>
+          <p>
+            Through our home brand market-leading software named <b>ACCOUNTA</b>, a complete solution to all your accounting needs from Ledger Entry, Sale Bills to GST Filling, E-way Bills, Takada and many more, we have seized the industry from the very root retail counters to wholesale merchants as well as FMCG or distributors, agencies and manufacturers.
+          </p>
         </div>
-
       </div>
-    </section>End Frequently Asked Questions Section -->
+    </div>
+  </section>
+
+  
+
+<main id="main">
+<!-- ======= Accounta Software Solutions Section ======= -->
+<section id="software-solutions" class="container py-5">
+  <div class="text-center mb-5">
+    <h2 class="display-6 fw-bold">OUR ACCOUNTING SOFTWARES</h2>
+    <p class="lead text-muted">TAILORED ACCOUNTING SOFTWARE FOR VARIOUS INDUSTRY VERTICALS</p>
+  </div>
+
+  <div class="row g-4">
+    <!-- Wholesale Cloth Software -->
+    <div class="col-12 col-md-6">
+      <div class="software-card d-flex align-items-center p-4 rounded-3 shadow-sm">
+        <div class="me-4">
+          <img src="assets/img/Accounta Services/AS1.jpg" alt="Wholesale Cloth Software" class="software-icon rounded-3">
+        </div>
+        <div class="flex-grow-1">
+          <h3 class="h4 mb-2">Wholesale Cloth Software</h3>
+          <p class="text-muted mb-3">A comprehensive business solution designed specifically for wholesale cloth merchants. Streamline your inventory, sales, and accounting processes.</p>
+          <div class="d-flex mb-3">
+            <span class="badge bg-primary me-2">Inventory Management</span>
+            <span class="badge bg-primary">Sales Tracking</span>
+          </div>
+          <p class="text-muted small mb-2 text-start">
+            <i class="bi bi-play-circle me-2"></i><strong>Click below to watch demo for this software 👇</strong>
+          </p>
+          <div class="d-flex">
+            <a href="https://www.youtube.com/watch?v=m59yZf7f-rc" class="btn btn-success me-2">
+              <i class="bi bi-play-circle me-1"></i> Master + Entry Demo
+            </a>
+            <a href="https://www.youtube.com/watch?v=rfKz5GbDG-w" class="btn btn-outline-secondary">
+              <i class="bi bi-graph-up me-1"></i> Report + Utility Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Textile Agency Software -->
+    <div class="col-12 col-md-6">
+      <div class="software-card d-flex align-items-center p-4 rounded-3 shadow-sm">
+        <div class="me-4">
+          <img src="assets/img/Accounta Services/AS2.jpeg" alt="Textile Agency Software" class="software-icon rounded-3">
+        </div>
+        <div class="flex-grow-1">
+          <h3 class="h4 mb-2">Textile Agency Software</h3>
+          <p class="text-muted mb-3">Specialized solution for textile agents to manage commissions, sales, and intricate textile business workflows with ease.</p>
+          <div class="d-flex mb-3">
+            <span class="badge bg-primary me-2">Commission Tracking</span>
+            <span class="badge bg-primary me-2">Sales Analysis</span>
+            <span class="badge bg-primary">Agent Management</span>
+          </div>
+          <p class="text-muted small mb-2 text-start">
+            <i class="bi bi-play-circle me-2"></i><strong>Click below to watch demo for this software 👇</strong>
+          </p>
+          <div>
+            <a href="#" class="btn btn-secondary disabled">
+              <i class="bi bi-play-circle me-1"></i> Coming Soon
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Retail Trade (Barcode) Software -->
+    <div class="col-12 col-md-6">
+      <div class="software-card d-flex align-items-center p-4 rounded-3 shadow-sm">
+        <div class="me-4">
+          <img src="assets/img/Accounta Services/AS3.jpg" alt="Retail Trade Software" class="software-icon rounded-3">
+        </div>
+        <div class="flex-grow-1">
+          <h3 class="h4 mb-2">Retail Trade (Barcode) Software</h3>
+          <p class="text-muted mb-3">Advanced barcode-enabled solution for retail traders to simplify inventory management, billing, and sales tracking.</p>
+          <div class="d-flex mb-3">
+            <span class="badge bg-primary me-2">Barcode Integration</span>
+            <span class="badge bg-primary me-2">Point of Sale</span>
+            <span class="badge bg-primary">Inventory Control</span>
+          </div>
+          <p class="text-muted small mb-2 text-start">
+            <i class="bi bi-play-circle me-2"></i><strong>Click below to watch demo for this software 👇</strong>
+          </p>
+          <div>
+            <a href="#" class="btn btn-secondary disabled">
+              <i class="bi bi-play-circle me-1"></i> Coming Soon
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Auto Spares Software -->
+    <div class="col-12 col-md-6">
+      <div class="software-card d-flex align-items-center p-4 rounded-3 shadow-sm">
+        <div class="me-4">
+          <img src="assets/img/Accounta Services/AS4.jpeg" alt="Auto Spares Software" class="software-icon rounded-3">
+        </div>
+        <div class="flex-grow-1">
+          <h3 class="h4 mb-2">Auto Spares Software</h3>
+          <p class="text-muted mb-3">Specialized accounting and inventory management solution for auto parts dealers and workshops.</p>
+          <div class="d-flex mb-3">
+            <span class="badge bg-primary me-2">Parts Inventory</span>
+            <span class="badge bg-primary me-2">Vendor Management</span>
+            <span class="badge bg-primary">Sales Tracking</span>
+          </div>
+          <p class="text-muted small mb-2 text-start">
+            <i class="bi bi-play-circle me-2"></i><strong>Click below to watch demo for this software 👇</strong>
+          </p>
+          <div>
+            <a href="#" class="btn btn-secondary disabled">
+              <i class="bi bi-play-circle me-1"></i> Coming Soon
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FMCG Software -->
+    <div class="col-12 col-md-6">
+      <div class="software-card d-flex align-items-center p-4 rounded-3 shadow-sm">
+        <div class="me-4">
+          <img src="assets/img/Accounta Services/AS5.jpg" alt="FMCG Software" class="software-icon rounded-3">
+        </div>
+        <div class="flex-grow-1">
+          <h3 class="h4 mb-2">FMCG (Fast Moving Consumer Goods) Software</h3>
+          <p class="text-muted mb-3">Comprehensive solution for Fast Moving Consumer Goods businesses to manage complex supply chain and sales processes.</p>
+          <div class="d-flex mb-3">
+            <span class="badge bg-primary me-2">Supply Chain</span>
+            <span class="badge bg-primary me-2">Distribution</span>
+            <span class="badge bg-primary">Sales Analytics</span>
+          </div>
+          <p class="text-muted small mb-2 text-start">
+            <i class="bi bi-play-circle me-2"></i><strong>Click below to watch demo for this software 👇</strong>
+          </p>
+          <div>
+            <a href="#" class="btn btn-secondary disabled">
+              <i class="bi bi-play-circle me-1"></i> Coming Soon
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Cloth Commission Agent Software -->
+    <div class="col-12 col-md-6">
+      <div class="software-card d-flex align-items-center p-4 rounded-3 shadow-sm">
+        <div class="me-4">
+          <img src="assets/img/Accounta Services/AS5.jpg" alt="FMCG Software" class="software-icon rounded-3">
+        </div>
+        <div class="flex-grow-1">
+          <h3 class="h4 mb-2">Cloth Commission Agent Software</h3>
+          <p class="text-muted mb-3">One and only unique software made only for Cloth commision agents to ease their accounting needs.</p>
+          <div class="d-flex mb-3">
+            <span class="badge bg-primary me-2">Cloth Commission</span>
+            <span class="badge bg-primary me-2">Agent</span>
+            <span class="badge bg-primary">Unique</span>
+          </div>
+          <p class="text-muted small mb-2 text-start">
+            <i class="bi bi-play-circle me-2"></i><strong>Click below to watch demo for this software 👇</strong>
+          </p>
+          <div>
+            <a href="#" class="btn btn-secondary disabled">
+              <i class="bi bi-play-circle me-1"></i> Coming Soon
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+<!-- End Accounta Software Solutions Section -->
+    
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
-
         <div class="section-title">
           <h2>Contact</h2>
           <p>Please feel free to drop by our office during business hours, call us with any questions, or send us a note using the form below.</p>
         </div>
 
         <div class="row">
-
           <div class="col-lg-5 d-flex align-items-stretch">
             <div class="info">
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>408, Hari Om Commercial Complex, New Dakbunglow rd, Patna, Bihar - 800001</p>
+                <p>602, 6th Floor, Nutan Plaza, Bander Bagicha, Patna, Bihar - 800001</p>
               </div>
 
               <div class="email">
@@ -1303,10 +719,8 @@
                 <h4>Call:</h4>
                 <p>+91 9431238132</p>
               </div>
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d911.9212936680217!2d85.14081291168073!3d25.60946497728754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x39ed585c347bf3c5%3A0x1c6c62f91b94a36c!2sNew%20Dak%20Bunglow%20Rd%2C%20Lodipur%2C%20Patna%2C%20Bihar%20800001!3m2!1d25.6091694!2d85.1417486!5e0!3m2!1sen!2sin!4v1666815071059!5m2!1sen!2sin" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.8851348207727!2d85.13357467658031!3d25.608732877448446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed59d59eb29d57%3A0x27c1d600b76b7de7!2sNutan%20Plaza!5e0!3m2!1sen!2sin!4v1744041086813!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
@@ -1337,40 +751,21 @@
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div>
-
         </div>
-
       </div>
     </section><!-- End Contact Section -->
-
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-
-    <!-- <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
     <div class="footer-top">
       <div class="container">
         <div class="row">
-
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Accounta</h3>
+            <h3>Accounta <span class="since-text" style="font-size: 12px;">Since <span class="year-number">1998</span></span></h3>
             <p>
-              408, Hari Om Complex, New Dakbangla rd <br>
-              Patna,BR 800001<br>
+              602, 6th Floor, Nutan Plaza, Bander Bagicha <br>
+              Patna, BR 800001<br>
               INDIA <br>
               <br>
               <strong>Phone:</strong> +91 9431238132<br>
@@ -1379,21 +774,8 @@
             </p>
           </div>
 
-          
-
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Pages</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
@@ -1403,7 +785,7 @@
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <!-- <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Socials</h4>
             <p>Feel free to connect with us on our socials.</p>
             <div class="social-links mt-3">
@@ -1412,9 +794,8 @@
               <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
               <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
               <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
+            </div> -->
           </div>
-
         </div>
       </div>
     </div>
@@ -1424,10 +805,6 @@
         &copy; Copyright <strong><span>Diginet Data System</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
         Designed by <a href="https://www.linkedin.com/in/vedant-saraf-8a71b31b4/">Accounta</a>
       </div>
     </div>
@@ -1448,6 +825,59 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- Custom JS -->
+  <script>
+    // Add smooth scrolling to all links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 70,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+    
+    // Add animation on scroll for elements
+    window.addEventListener('load', () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+        once: true,
+        mirror: false
+      });
+    });
+    
+    // Add active class to nav items on scroll
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('.nav-link');
+      
+      let current = '';
+      
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        
+        if (window.pageYOffset >= sectionTop - 100) {
+          current = section.getAttribute('id');
+        }
+      });
+      
+      navLinks.forEach((link) => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').includes(current)) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
