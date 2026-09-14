@@ -3,921 +3,554 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Accounta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Accounta</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Accounta — accounting software for Indian trade, on desktop and mobile</title>
+  <meta name="description" content="Accounta Takada, Trading and Agency: three mobile apps that take your books into the field. Collections, outstanding, dispatch and bills, synced from the Accounta desktop software. By Diginet Data System, Patna, since 1998.">
+  <meta name="keywords" content="Accounta Takada, Accounta Trading, Accounta Agency, collection app, GST billing software, outstanding goods, payment dispatch, Diginet Data System, Patna">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  
-  <!-- Custom CSS -->
-  <style>
-    /* Modern design updates */
-    body {
-      font-family: 'Jost', sans-serif;
-    }
-    
-    section {
-      padding: 30px 0; /* Reduced padding */
-    }
-    
-    .section-title {
-      margin-bottom: 20px; /* Reduced margin */
-      padding-bottom: 0; /* Reduce spacing */
-    }
-    
-    .section-title h2 {
-      margin-bottom: 10px; /* Reduce space below title */
-      padding-bottom: 10px; /* Reduce space */
-    }
-    
-    .section-title p {
-      margin-bottom: 5px; /* Reduce space */
-    }
-    
-    /* Improved Since 1998 styling */
-    .logo-text {
-      display: flex;
-      align-items: center;
-      position: relative;
-    }
-    
-    .since-text {
-      font-size: 14px;
-      color: #ffffff;
-      background-color: #47b2e4;
-      font-weight: 700;
-      padding: 2px 8px;
-      border-radius: 4px;
-      margin-left: 10px;
-      letter-spacing: 0.5px;
-    }
-    
-    .year-number {
-      font-weight: 800;
-      color: #fff;
-    }
-    
-    .hero-content {
-      padding-right: 20px;
-    }
-    
-    .founder-img {
-      border-radius: 50%;
-      border: 4px solid #47b2e4;
-      max-width: 180px;
-      margin-bottom: 15px;
-    }
-    
-    .founder-name {
-      font-weight: 600;
-      color: #37517e;
-      margin-bottom: 10px;
-    }
-    
-    .founder-title {
-      font-style: italic;
-      color: #6c757d;
-      margin-bottom: 15px;
-    }
-    
-    .service-card {
-      transition: all 0.3s ease;
-      height: 100%;
-    }
-    
-    .service-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    }
-    
-    /* Improved demo section */
-    .clients {
-      height: auto;
-      padding: 20px 0;
-      background-color: #f8f9fa;
-    }
-    
-    .demo-container {
-      background-color: #fff;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-      margin-bottom: 20px;
-    }
-    
-    .demo-header {
-      padding: 12px 15px;
-      background-color: #37517e;
-      color: white;
-      font-weight: 600;
-      font-size: 16px;
-      text-align: center;
-    }
-    
-    .demo-content {
-      padding: 15px;
-    }
-    
-    .demo-button {
-      width: 100%;
-      padding: 10px;
-      border: none;
-      border-radius: 4px;
-      transition: all 0.3s ease;
-      font-weight: 500;
-      text-align: center;
-      color: white;
-    }
-    
-    .demo-button:hover {
-      opacity: 0.9;
-      transform: translateY(-2px);
-    }
-    
-    .demo-link {
-      display: block;
-      padding: 8px 15px;
-      color: #333;
-      font-weight: 500;
-      transition: all 0.2s;
-      border-bottom: 1px solid #eee;
-    }
-    
-    .demo-link:last-child {
-      border-bottom: none;
-    }
-    
-    .demo-link:hover {
-      background-color: #f5f5f5;
-      color: #47b2e4;
-    }
-    
-    .about-content {
-      display: flex;
-      align-items: center;
-    }
-    
-    .contact .info {
-      border-radius: 5px;
-    }
-    
-    .php-email-form {
-      border-radius: 5px;
-    }
-    .founder-image-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .founder-img {
-    width: 4000px;
-    height: 200px;
-    object-fit: cover;
-    border: 4px solid #47b2e4;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .founder-img:hover {
-    transform: scale(1.05);
-  }
-  
-  .founder-name {
-    margin-top: 15px;
-    font-size: 1.2rem;
-    color: #37517e;
-    font-weight: 600;
-  }
-  
-  .founder-title {
-    color: #6c757d;
-    font-style: italic;
-  }
-  
-  @media (max-width: 768px) {
-    .founder-img {
-      width: 200px;
-      height: 200px;
-    }
-  }
-
-  #accounta-software .software-item {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  #accounta-software .software-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
-  }
-  
-  #accounta-software .features .badge {
-    font-weight: 400;
-    opacity: 0.8;
-  }
-  
-  #accounta-software .btn-outline-primary {
-    border-width: 2px;
-  }
-  
-  @media (max-width: 768px) {
-    #accounta-software .software-item {
-      text-align: center;
-    }
-    
-    #accounta-software .software-item .col-md-3 {
-      margin-bottom: 15px;
-    }
-  }
-
-  .badge-style {
-    display: inline-block;
-    background-color: #47b2e4;  /* Same blue as seen in the image */
-    color: white;
-    font-weight: 700;
-    padding: 4px 10px;
-    border-radius: 4px;
-    font-size: 0.9em;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-
-  #software-solutions .software-card {
-    background: #fff;
-    border: 1px solid #e0e0e0;
-    transition: all 0.3s ease;
-  }
-
-  #software-solutions .software-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
-  }
-
-  #software-solutions .software-icon {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-  }
-
-  #software-solutions .badge {
-    font-weight: 400;
-  }
-
-  @media (max-width: 768px) {
-    #software-solutions .software-card {
-      flex-direction: column;
-      text-align: center;
-    }
-    
-    #software-solutions .software-card > div {
-      text-align: center;
-    }
-    
-    #software-solutions .software-icon {
-      margin-bottom: 15px;
-      margin-right: 0 !important;
-    }
-  }
-  /* Larger Navbar Buttons */
-.navbar .nav-link {
-  font-size: 17px;  /* Increase font size from default */
-  padding: 12px 18px !important;  /* Add more padding around text */
-  font-weight: 500;  /* Make font slightly bolder */
-  transition: all 0.3s ease;
-}
-
-.navbar .nav-link:hover {
-  color: #47b2e4;
-  transform: translateY(-2px);
-}
-
-/* Smaller Hero Section */
-#hero {
-  height: 70vh;  /* Reduce from 80vh to 70vh */
-  min-height: 450px;  /* Reduce minimum height */
-}
-
-#hero h1 {
-  font-size: 38px;  /* Slightly smaller heading */
-  line-height: 1.2;
-  margin-bottom: 15px;
-}
-
-#hero h2 {
-  font-size: 18px;  /* Slightly smaller subheading */
-  line-height: 1.4;
-  margin-bottom: 20px;
-}
-
-/* Make hero image slightly smaller */
-#hero .hero-img img {
-  max-height: 320px;  /* Reduce from potentially larger size */
-}
-
-/* Responsive adjustments */
-@media (max-width: 992px) {
-  #hero {
-    height: auto;
-    padding: 100px 0 60px 0;
-  }
-  
-  #hero h1 {
-    font-size: 32px;
-  }
-  
-  #hero h2 {
-    font-size: 16px;
-  }
-  
-  .navbar .nav-link {
-    padding: 10px 15px !important;
-  }
-}
-
-@media (max-width: 768px) {
-  #hero {
-    padding: 80px 0 50px 0;
-  }
-  
-  .navbar-mobile .nav-link {
-    font-size: 16px;
-    padding: 12px 20px !important;
-  }
-}
-  .hero-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 28px;
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  border-radius: 30px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  border: none;
-  text-decoration: none;
-  cursor: pointer;
-}
-.whatsapp-link {
-    display: inline-flex;
-    align-items: center;
-    margin-left: 10px;
-    background-color: #25D366; /* WhatsApp brand color */
-    color: white;
-    text-decoration: none;
-    padding: 4px 12px;
-    border-radius: 4px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-  }
-  
-  .whatsapp-link:hover {
-    background-color: #128C7E; /* Darker WhatsApp color on hover */
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .whatsapp-icon {
-    margin-right: 6px;
-    font-size: 1.2em;
-  }
-
-/* Primary button - Ticket */
-.hero-button.ticket {
-  background: linear-gradient(135deg, #9d4edd 0%, #7b2cbf 100%);
-  color: white;
-}
-
-.hero-button.ticket:hover {
-  background: linear-gradient(135deg, #b54fff 0%, #8a3dd0 100%);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  transform: translateY(-2px);
-}
-
-/* YouTube button */
-.hero-button.youtube {
-  background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
-  color: white;
-  margin-left: 15px;
-}
-
-.hero-button.youtube:hover {
-  background: linear-gradient(135deg, #ff3333 0%, #e60000 100%);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  transform: translateY(-2px);
-}
-
-.hero-button i {
-  margin-right: 8px;
-  font-size: 18px;
-}
-
-/* Media queries for responsive design */
-@media (max-width: 768px) {
-  .hero-button {
-    padding: 10px 22px;
-    font-size: 14px;
-  }
-  
-  .hero-button.youtube {
-    margin-left: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-button {
-    padding: 10px 18px;
-    font-size: 13px;
-  }
-}
-    /* Responsive improvements */
-    @media (max-width: 768px) {
-      .about-content {
-        flex-direction: column;
-      }
-      
-      .founder-section {
-        margin-bottom: 20px;
-        text-align: center;
-      }
-      
-      .section-title h2 {
-        font-size: 26px;
-      }
-  }
-  </style>
+  <link href="assets/css/site.css" rel="stylesheet">
 </head>
 
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <!-- ======= Header ======= -->
-<header id="header" class="fixed-top">
-  <div class="container d-flex align-items-center">
-    <h1 class="logo me-auto">
-      <a href="index.html" class="logo-text">
-        Accounta <span class="since-text">Since <span class="year-number">1998</span></span>
+  <!-- ======================================================== masthead -->
+  <header class="masthead">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img src="assets/img/apps/accounta-icon.png" alt="" width="34" height="34">
+        <b>Accounta</b>
+        <span>Since 1998</span>
       </a>
-    </h1>
 
-    <nav id="navbar" class="navbar">
-      <ul>
-        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-        <li><a class="nav-link scrollto" href="#about">About</a></li>
-        <li><a class="nav-link scrollto" href="#services2">Softwares</a></li>
-        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-      </ul>
-      <i class="bi bi-list mobile-nav-toggle"></i>
-    </nav>
-  </div>
-</header>
+      <button class="navtoggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
 
-
-<!-- ======= Hero Section ======= -->
-<section id="hero" class="d-flex align-items-center">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-6 d-flex flex-column justify-content-center pt-2 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-        <div class="hero-content">
-          <h1>A Complete Business Solution Software</h1>
-          <h2>Our team consists of skilled developers who specialize in providing solutions to your problems since 1998.</h2>
-          <h1>Contact us at :- 
-            <a href="https://wa.me/919431238132" class="whatsapp-link" target="_blank">
-              <i class="bi bi-whatsapp whatsapp-icon"></i>9431238132
-            </a>
-          </h1>
-          <div class="d-flex mt-4">
-            <a href="https://ticketing.accounta.app/#/" class="hero-button ticket">
-              <i class="bi bi-ticket-perforated"></i>OPEN TICKET 24*7
-            </a>
-            <a href="https://www.youtube.com/@sanjaysaraf1928/featured" class="hero-button youtube">
-              <i class="bi bi-youtube"></i>Subscribe Now!
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 order-1 order-lg-2 hero-img text-center" data-aos="zoom-in" data-aos-delay="200">
-        <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">`
-      </div>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#apps">Mobile apps</a></li>
+          <li><a href="#desktop">Desktop software</a></li>
+          <li><a href="#firm">The firm</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="cta" href="https://ticketing.accounta.app/#/" target="_blank" rel="noopener">Support</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
-</section>
+  </header>
 
-  <!-- ======= About Us Section ======= -->
-  <section id="about" class="about">
-    <div class="container" data-aos="fade-up">
-      <div class="section-title">
-        <h2>About Us</h2>
-      </div>
+  <main id="main">
 
-      <div class="row content">
-        <div class="col-lg-4 founder-section">
-          <div class="text-center founder-image-container">
-            <img src="assets/img/MYPIC.jpeg" alt="Mr. Sanjay Kumar Saraf" class="founder-img">
-            <h4 class="founder-name">Mr. Sanjay Kumar Saraf</h4>
-            <p class="founder-title"><b>Founder & CEO</b></p>
-          </div>
-        </div>
-        
-        <div class="col-lg-8">
-          <p>
-            We at Diginet Data System are here to help you with issues relating to our software requirements. Established in 1998, we have decades of experience in delivering quality software solutions.
+    <!-- ========================================================== hero -->
+    <section class="hero">
+      <div class="wrap">
+
+        <div>
+          <p class="eyebrow">Three apps · Android &amp; iOS</p>
+
+          <h1 class="h-xl">Your books,<br><em>in the field.</em></h1>
+
+          <p class="lede">
+            Accounta Takada, Trading and Agency put collections, outstanding, dispatch
+            and bills on your team's phone — working offline, and syncing straight from
+            the Accounta software already running at your counter.
           </p>
-          <ul>
-            <li><i class="ri-check-double-line"></i> <b>Single and Multi User</b>  Accounting Softwares. </li>
-            <li><i class="ri-check-double-line"></i> <b>Cloud Ready</b> Softwares with <b>Backup</b> feature.</li>
-            <li><i class="ri-check-double-line"></i> According to user demands, <b>Android/iOS mobile</b> applications.</li>
+
+          <div class="store-row">
+            <a class="store" href="#apps" data-store="play">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 2.3c-.3.3-.5.8-.5 1.4v16.6c0 .6.2 1.1.5 1.4l.1.1 9.3-9.3v-.2L3.7 2.2l-.1.1zm12.5 6.1L13 5.3 4.9 1.3c-.3-.2-.6-.2-.8-.1l9.4 9.4 2.6-2.2zM4.1 22.8c.2.1.5.1.8-.1l8.1-4 3.1-3.1-2.6-2.2-9.4 9.4zM20.9 10.9l-2.4-1.3-2.8 2.4 2.8 2.4 2.4-1.3c.7-.4.9-1.3.5-2-.1-.1-.3-.2-.5-.2z"/></svg>
+              <span><span>Get it on</span><b>Google Play</b></span>
+            </a>
+            <a class="store" href="#apps" data-store="ios">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.7c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9s-1.8-.9-3-.8c-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .8 1.1 1.7 2.3 2.9 2.2 1.2 0 1.6-.7 3-.7s1.8.7 3 .7 2-1.1 2.8-2.2c.9-1.2 1.2-2.5 1.2-2.5s-2.4-.9-2.4-3.6zM14.2 5.6c.6-.8 1-1.8.9-2.9-.9 0-2 .6-2.7 1.4-.6.7-1.1 1.8-.9 2.8 1 .1 2-.5 2.7-1.3z"/></svg>
+              <span><span>Download on the</span><b>App Store</b></span>
+            </a>
+          </div>
+
+          <ul class="trust">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5"/></svg> Works offline, syncs later</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5"/></svg> One login per company</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5"/></svg> Same books as your desktop</li>
           </ul>
-          <p>
-            Through our home brand market-leading software named <b>ACCOUNTA</b>, a complete solution to all your accounting needs from Ledger Entry, Sale Bills to GST Filling, E-way Bills, Takada and many more, we have seized the industry from the very root retail counters to wholesale merchants as well as FMCG or distributors, agencies and manufacturers.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
-
-<main id="main">
-<!-- ======= Accounta Software Solutions Section ======= -->
-<section id="software-solutions" class="container py-5">
-  <div class="text-center mb-5">
-    <h2 class="display-6 fw-bold">OUR ACCOUNTING SOFTWARES</h2>
-    <p class="lead text-muted">TAILORED ACCOUNTING SOFTWARE FOR VARIOUS INDUSTRY VERTICALS</p>
-  </div>
-
-  <div class="row g-4">
-    <!-- Wholesale Cloth Software -->
-    <div class="col-12 col-md-6">
-      <div class="software-card d-flex align-items-center p-4 rounded-3 shadow-sm">
-        <div class="me-4">
-          <img src="assets/img/Accounta Services/AS1.jpg" alt="Wholesale Cloth Software" class="software-icon rounded-3">
-        </div>
-        <div class="flex-grow-1">
-          <h3 class="h4 mb-2">Wholesale Cloth Software</h3>
-          <p class="text-muted mb-3">A comprehensive business solution designed specifically for wholesale cloth merchants. Streamline your inventory, sales, and accounting processes.</p>
-          <div class="d-flex mb-3">
-            <span class="badge bg-primary me-2">Inventory Management</span>
-            <span class="badge bg-primary">Sales Tracking</span>
-          </div>
-          <p class="text-muted small mb-2 text-start">
-            <i class="bi bi-play-circle me-2"></i><strong>Click below to watch demo for this software 👇</strong>
-          </p>
-          <div class="d-flex">
-            <a href="https://www.youtube.com/watch?v=m59yZf7f-rc" class="btn btn-success me-2">
-              <i class="bi bi-play-circle me-1"></i> Master + Entry Demo
-            </a>
-            <a href="https://www.youtube.com/watch?v=rfKz5GbDG-w" class="btn btn-outline-secondary">
-              <i class="bi bi-graph-up me-1"></i> Report + Utility Demo
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Textile Agency Software -->
-    <div class="col-12 col-md-6">
-      <div class="software-card d-flex align-items-center p-4 rounded-3 shadow-sm">
-        <div class="me-4">
-          <img src="assets/img/Accounta Services/AS2.jpeg" alt="Textile Agency Software" class="software-icon rounded-3">
-        </div>
-        <div class="flex-grow-1">
-          <h3 class="h4 mb-2">Textile Agency Software</h3>
-          <p class="text-muted mb-3">Specialized solution for textile agents to manage commissions, sales, and intricate textile business workflows with ease.</p>
-          <div class="d-flex mb-3">
-            <span class="badge bg-primary me-2">Commission Tracking</span>
-            <span class="badge bg-primary me-2">Sales Analysis</span>
-            <span class="badge bg-primary">Agent Management</span>
-          </div>
-          <p class="text-muted small mb-2 text-start">
-            <i class="bi bi-play-circle me-2"></i><strong>Click below to watch demo for this software 👇</strong>
-          </p>
-          <div>
-            <a href="#" class="btn btn-secondary disabled">
-              <i class="bi bi-play-circle me-1"></i> Coming Soon
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Retail Trade (Barcode) Software -->
-    <div class="col-12 col-md-6">
-      <div class="software-card d-flex align-items-center p-4 rounded-3 shadow-sm">
-        <div class="me-4">
-          <img src="assets/img/Accounta Services/AS3.jpg" alt="Retail Trade Software" class="software-icon rounded-3">
-        </div>
-        <div class="flex-grow-1">
-          <h3 class="h4 mb-2">Retail Trade (Barcode) Software</h3>
-          <p class="text-muted mb-3">Advanced barcode-enabled solution for retail traders to simplify inventory management, billing, and sales tracking.</p>
-          <div class="d-flex mb-3">
-            <span class="badge bg-primary me-2">Barcode Integration</span>
-            <span class="badge bg-primary me-2">Point of Sale</span>
-            <span class="badge bg-primary">Inventory Control</span>
-          </div>
-          <p class="text-muted small mb-2 text-start">
-            <i class="bi bi-play-circle me-2"></i><strong>Click below to watch demo for this software 👇</strong>
-          </p>
-          <div>
-            <a href="#" class="btn btn-secondary disabled">
-              <i class="bi bi-play-circle me-1"></i> Coming Soon
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Auto Spares Software -->
-    <div class="col-12 col-md-6">
-      <div class="software-card d-flex align-items-center p-4 rounded-3 shadow-sm">
-        <div class="me-4">
-          <img src="assets/img/Accounta Services/AS4.jpeg" alt="Auto Spares Software" class="software-icon rounded-3">
-        </div>
-        <div class="flex-grow-1">
-          <h3 class="h4 mb-2">Auto Spares Software</h3>
-          <p class="text-muted mb-3">Specialized accounting and inventory management solution for auto parts dealers and workshops.</p>
-          <div class="d-flex mb-3">
-            <span class="badge bg-primary me-2">Parts Inventory</span>
-            <span class="badge bg-primary me-2">Vendor Management</span>
-            <span class="badge bg-primary">Sales Tracking</span>
-          </div>
-          <p class="text-muted small mb-2 text-start">
-            <i class="bi bi-play-circle me-2"></i><strong>Click below to watch demo for this software 👇</strong>
-          </p>
-          <div>
-            <a href="#" class="btn btn-secondary disabled">
-              <i class="bi bi-play-circle me-1"></i> Coming Soon
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- FMCG Software -->
-    <div class="col-12 col-md-6">
-      <div class="software-card d-flex align-items-center p-4 rounded-3 shadow-sm">
-        <div class="me-4">
-          <img src="assets/img/Accounta Services/AS5.jpg" alt="FMCG Software" class="software-icon rounded-3">
-        </div>
-        <div class="flex-grow-1">
-          <h3 class="h4 mb-2">FMCG (Fast Moving Consumer Goods) Software</h3>
-          <p class="text-muted mb-3">Comprehensive solution for Fast Moving Consumer Goods businesses to manage complex supply chain and sales processes.</p>
-          <div class="d-flex mb-3">
-            <span class="badge bg-primary me-2">Supply Chain</span>
-            <span class="badge bg-primary me-2">Distribution</span>
-            <span class="badge bg-primary">Sales Analytics</span>
-          </div>
-          <p class="text-muted small mb-2 text-start">
-            <i class="bi bi-play-circle me-2"></i><strong>Click below to watch demo for this software 👇</strong>
-          </p>
-          <div>
-            <a href="#" class="btn btn-secondary disabled">
-              <i class="bi bi-play-circle me-1"></i> Coming Soon
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Cloth Commission Agent Software -->
-    <div class="col-12 col-md-6">
-      <div class="software-card d-flex align-items-center p-4 rounded-3 shadow-sm">
-        <div class="me-4">
-          <img src="assets/img/Accounta Services/AS5.jpg" alt="FMCG Software" class="software-icon rounded-3">
-        </div>
-        <div class="flex-grow-1">
-          <h3 class="h4 mb-2">Cloth Commission Agent Software</h3>
-          <p class="text-muted mb-3">One and only unique software made only for Cloth commision agents to ease their accounting needs.</p>
-          <div class="d-flex mb-3">
-            <span class="badge bg-primary me-2">Cloth Commission</span>
-            <span class="badge bg-primary me-2">Agent</span>
-            <span class="badge bg-primary">Unique</span>
-          </div>
-          <p class="text-muted small mb-2 text-start">
-            <i class="bi bi-play-circle me-2"></i><strong>Click below to watch demo for this software 👇</strong>
-          </p>
-          <div>
-            <a href="#" class="btn btn-secondary disabled">
-              <i class="bi bi-play-circle me-1"></i> Coming Soon
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-</section>
-<!-- End Accounta Software Solutions Section -->
-    
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>Please feel free to drop by our office during business hours, call us with any questions, or send us a note using the form below.</p>
         </div>
 
-        <div class="row">
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>602, 6th Floor, Nutan Plaza, Bander Bagicha, Patna, Bihar - 800001</p>
+        <!-- ======= the products themselves, running ======= -->
+        <div class="rig" id="rig">
+
+          <!-- Trading: outstanding goods -->
+          <div class="phone side">
+            <div class="screen">
+              <div class="appbar blue">
+                <span class="dot"></span>
+                <span><b>Trading</b><small>OUTSTANDING</small></span>
               </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>diginetcomputers408@gmail.com</p>
+              <div class="appbody">
+                <div class="srow"><span class="stitle">Outstanding</span><span class="smeta">42 parties</span></div>
+                <div class="stable">
+                  <div class="th"><span>PARTY</span><span>AGE</span><span>AMOUNT</span></div>
+                  <div class="tr"><b>Balaji Vastralaya</b><span>62</span><span class="due">1,84,200</span></div>
+                  <div class="tr"><b>Shree Textiles</b><span>28</span><span>96,450</span></div>
+                  <div class="tr"><b>Maa Ambey Cloth</b><span>91</span><span class="due">2,41,900</span></div>
+                  <div class="tr"><b>Krishna Traders</b><span>14</span><span>38,700</span></div>
+                  <div class="tr"><b>New Bharat Agency</b><span>45</span><span>1,12,300</span></div>
+                  <div class="tr"><b>Ganpati Fabrics</b><span>7</span><span>21,650</span></div>
+                  <div class="tr"><b>Laxmi Cloth Store</b><span>33</span><span>67,800</span></div>
+                  <div class="tr"><b>Anand Vastra</b><span>78</span><span class="due">1,45,600</span></div>
+                  <div class="tr"><b>Sita Ram &amp; Sons</b><span>21</span><span>52,400</span></div>
+                </div>
+                <div class="field-m"><span>Total outstanding</span><b class="num">₹ 8,94,300</b></div>
+                <span class="chip sky foot-chip">Synced 9:42 AM</span>
               </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+91 9431238132</p>
-              </div>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.8851348207727!2d85.13357467658031!3d25.608732877448446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed59d59eb29d57%3A0x27c1d600b76b7de7!2sNutan%20Plaza!5e0!3m2!1sen!2sin!4v1744041086813!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
 
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
+          <!-- Takada: the collection receipt, live -->
+          <div class="phone" id="takada">
+            <div class="screen">
+              <div class="appbar green">
+                <span class="dot"></span>
+                <span><b>Takada</b><small>CREATE RECEIPT</small></span>
+              </div>
+              <div class="appbody">
+                <div class="stack">
+
+                  <div class="step step-1">
+                    <div class="field-m"><span>Party name</span><b>Maa Ambey Cloth</b></div>
+                    <div class="field-m amt"><span>Enter amount</span><b class="num">₹ 45,000</b></div>
+                    <div class="field-m"><span>Mode</span><b>Cheque · HDFC 4471</b></div>
+                    <div><span class="chip grey" id="gps">Locating…</span></div>
+                    <div class="sbtn">Save receipt</div>
+                  </div>
+
+                  <div class="step step-2">
+                    <div class="field-m"><span>Receipt no.</span><b>TKD/26-27/0418</b></div>
+                    <div class="field-m amt"><span>Collected from Maa Ambey Cloth</span><b class="num">₹ 45,000</b></div>
+                    <div style="display:flex;flex-wrap:wrap;gap:.5em">
+                      <span class="chip green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5"/></svg>Synced</span>
+                      <span class="chip sky">GPS tagged</span>
+                    </div>
+                    <div class="field-m"><span>Ledger balance</span><b class="num">₹ 1,96,900</b></div>
+                    <div class="stable">
+                      <div class="th"><span>TODAY</span><span>QTY</span><span>AMOUNT</span></div>
+                      <div class="tr"><b>Cash</b><span>4</span><span>1,28,400</span></div>
+                      <div class="tr"><b>Cheque</b><span>2</span><span>90,000</span></div>
+                    </div>
+                    <div class="sbtn blue">Print receipt</div>
+                  </div>
+
                 </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
               </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+            </div>
           </div>
+
+          <!-- Agency: the home screen -->
+          <div class="phone side">
+            <div class="screen">
+              <div class="appbar blue">
+                <span class="dot"></span>
+                <span><b>Agency</b><small>HOME</small></span>
+              </div>
+              <div class="appbody">
+                <div class="srow"><span class="stitle">Operations</span><span class="smeta">Sync 8:15</span></div>
+                <div class="tiles">
+                  <div class="tile b"><i></i><b>Outstanding</b><span>By party</span></div>
+                  <div class="tile s"><i></i><b>Dispatch</b><span>Payments</span></div>
+                  <div class="tile g"><i></i><b>Indent</b><span>New entry</span></div>
+                  <div class="tile b"><i></i><b>Price list</b><span>Live rates</span></div>
+                  <div class="tile s"><i></i><b>Find bill</b><span>Search</span></div>
+                  <div class="tile g"><i></i><b>Ledger</b><span>Accounts</span></div>
+                </div>
+                <div class="field-m"><span>Dispatched today</span><b class="num">₹ 3,42,100</b></div>
+                <div class="field-m"><span>Open indents</span><b>14 orders</b></div>
+                <span class="chip green foot-chip">All data up to date</span>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-    </section><!-- End Contact Section -->
-  </main><!-- End #main -->
+    </section>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Accounta <span class="since-text" style="font-size: 12px;">Since <span class="year-number">1998</span></span></h3>
-            <p>
-              602, 6th Floor, Nutan Plaza, Bander Bagicha <br>
-              Patna, BR 800001<br>
-              INDIA <br>
-              <br>
-              <strong>Phone:</strong> +91 9431238132<br>
-              <strong>Email:</strong> diginetcomputers408@gmail.com
-              <br>
+    <!-- ========================================================== apps -->
+    <section class="apps" id="apps">
+      <div class="wrap">
+
+        <div class="section-head">
+          <p class="eyebrow">The apps</p>
+          <h2 class="h-lg">Three apps, one set of books</h2>
+          <p class="lede">
+            Each app is built for a different job in the business. All three read the
+            same data your Accounta desktop software already keeps, so nothing is
+            entered twice.
+          </p>
+        </div>
+
+        <!-- ---------------------------------------------- Takada -->
+        <article class="app">
+          <div>
+            <div class="app-badge green">
+              <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 7h18v12H3z"/><path d="M3 11h18M7 15h4"/></svg></i>
+              <span><b>Accounta Takada</b><span class="role">Field collection</span></span>
+            </div>
+            <h3 class="h-md">Collect payments on the doorstep, even with no signal</h3>
+            <p class="lede">
+              Your agents raise receipts where the money changes hands. Everything is
+              stored on the phone first and pushed to your books the moment a connection
+              comes back.
             </p>
+            <ul class="feats g">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span><b>Works fully offline.</b> Receipts save to the phone and sync in the background when the network returns.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span><b>Every receipt is location tagged</b>, so you can see where a collection was actually made.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span><b>Photograph the cheque</b> at the counter and it travels with the receipt.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span><b>Print on the spot</b> to a Bluetooth receipt printer, or share a PDF.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span><b>Admin view</b> for debtors position, agent-wise collection and ledgers.</span></li>
+            </ul>
+            <div class="store-row">
+              <a class="btn btn-green" href="#contact">Ask for a demo</a>
+              <a class="btn btn-ghost" href="https://wa.me/919431238132" target="_blank" rel="noopener">WhatsApp us</a>
+            </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Pages</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="./refundpolicy.html">Refund Policy</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="./termsncondition.html">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="./privacy.html">Privacy policy</a></li>
+          <div class="app-art">
+            <div class="phone">
+              <div class="screen">
+                <div class="appbar green"><span class="dot"></span><span><b>Takada</b><small>DEBITORS POSITION</small></span></div>
+                <div class="appbody">
+                  <div class="srow"><span class="stitle">Debitors position</span><span class="smeta">Patna City</span></div>
+                  <div class="stable">
+                    <div class="th"><span>PARTY</span><span>AGE</span><span>BALANCE</span></div>
+                    <div class="tr"><b>Maa Ambey Cloth</b><span>91</span><span class="due">2,41,900</span></div>
+                    <div class="tr"><b>Balaji Vastralaya</b><span>62</span><span class="due">1,84,200</span></div>
+                    <div class="tr"><b>New Bharat Agency</b><span>45</span><span>1,12,300</span></div>
+                    <div class="tr"><b>Shree Textiles</b><span>28</span><span>96,450</span></div>
+                    <div class="tr"><b>Krishna Traders</b><span>14</span><span>38,700</span></div>
+                    <div class="tr"><b>Ganpati Fabrics</b><span>7</span><span>21,650</span></div>
+                    <div class="tr"><b>Anand Vastra</b><span>78</span><span class="due">1,45,600</span></div>
+                  </div>
+                  <div class="field-m"><span>Collected today</span><b class="num">₹ 2,18,400</b></div>
+                  <div style="display:flex;gap:.5em;flex-wrap:wrap">
+                    <span class="chip green">6 receipts synced</span>
+                    <span class="chip grey">1 pending</span>
+                  </div>
+                  <div class="sbtn">Create receipt</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ---------------------------------------------- Trading -->
+        <article class="app">
+          <div>
+            <div class="app-badge blue">
+              <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 19V9m5 10V5m5 14v-7m5 7V8"/></svg></i>
+              <span><b>Accounta Trading</b><span class="role">Trading firms</span></span>
+            </div>
+            <h3 class="h-md">The whole trading desk, in your pocket</h3>
+            <p class="lede">
+              Check what is outstanding, what has been dispatched and what a party owes
+              without walking back to the computer. Built for the people who are asked
+              these questions all day.
+            </p>
+            <ul class="feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span><b>Outstanding goods list</b> with filters, and party-wise outstanding at a glance.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span><b>Payment dispatch report</b> as a zoomable table you can actually read on a phone.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span><b>Find any bill</b> by number or party, and send bills out in bulk as PDFs.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span><b>Price list and address book</b> on hand while you are standing with a customer.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span><b>Sign in with an OTP</b> on your own number — no shared passwords.</span></li>
+            </ul>
+            <div class="store-row">
+              <a class="btn btn-primary" href="#contact">Ask for a demo</a>
+              <a class="btn btn-ghost" href="https://wa.me/919431238132" target="_blank" rel="noopener">WhatsApp us</a>
+            </div>
+          </div>
+
+          <div class="app-art">
+            <div class="phone">
+              <div class="screen">
+                <div class="appbar blue"><span class="dot"></span><span><b>Trading</b><small>PAYMENT DISPATCH</small></span></div>
+                <div class="appbody">
+                  <div class="srow"><span class="stitle">Payment dispatch</span><span class="smeta">Sep 2026</span></div>
+                  <div class="stable">
+                    <div class="th"><span>PARTY</span><span>NO.</span><span>AMOUNT</span></div>
+                    <div class="tr"><b>Shree Textiles</b><span>4</span><span>96,450</span></div>
+                    <div class="tr"><b>Krishna Traders</b><span>2</span><span>38,700</span></div>
+                    <div class="tr"><b>Ganpati Fabrics</b><span>1</span><span>21,650</span></div>
+                    <div class="tr"><b>New Bharat Agency</b><span>6</span><span>1,12,300</span></div>
+                    <div class="tr"><b>Balaji Vastralaya</b><span>3</span><span>84,200</span></div>
+                    <div class="tr"><b>Laxmi Cloth Store</b><span>2</span><span>67,800</span></div>
+                  </div>
+                  <div class="field-m"><span>Dispatched this month</span><b class="num">₹ 4,21,100</b></div>
+                  <div class="tiles">
+                    <div class="tile b"><i></i><b>Find bill</b><span>By number</span></div>
+                    <div class="tile s"><i></i><b>Bulk PDF</b><span>Send bills</span></div>
+                  </div>
+                  <span class="chip sky foot-chip">Synced 9:42 AM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ---------------------------------------------- Agency -->
+        <article class="app">
+          <div>
+            <div class="app-badge blue">
+              <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 3 3 8l9 5 9-5-9-5zM3 16l9 5 9-5M3 12l9 5 9-5"/></svg></i>
+              <span><b>Accounta Agency</b><span class="role">Agency operations</span></span>
+            </div>
+            <h3 class="h-md">For agents working between the mill and the market</h3>
+            <p class="lede">
+              The same operational set, fitted to how an agency runs: orders against
+              principals, dispatch against those orders, and what every party still owes
+              at the end of it.
+            </p>
+            <ul class="feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span><b>Indent entry</b> from wherever you take the order.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span><b>Outstanding goods and party outstanding</b>, filtered the way an agency asks for it.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span><b>Account ledgers</b> for any party, without calling the office.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span><b>Pulls straight from your existing books</b> — no separate data entry to maintain.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span><b>Search tracking</b>, so you can pick up where you left off.</span></li>
+            </ul>
+            <div class="store-row">
+              <a class="btn btn-primary" href="#contact">Ask for a demo</a>
+              <a class="btn btn-ghost" href="https://wa.me/919431238132" target="_blank" rel="noopener">WhatsApp us</a>
+            </div>
+          </div>
+
+          <div class="app-art">
+            <div class="phone">
+              <div class="screen">
+                <div class="appbar blue"><span class="dot"></span><span><b>Agency</b><small>INDENT ENTRY</small></span></div>
+                <div class="appbody">
+                  <div class="srow"><span class="stitle">New indent</span><span class="smeta">Draft</span></div>
+                  <div class="field-m"><span>Party</span><b>Shree Textiles</b></div>
+                  <div class="field-m"><span>Item</span><b>Cotton Shirting 58"</b></div>
+                  <div class="stable">
+                    <div class="th"><span>QUALITY</span><span>THN</span><span>RATE</span></div>
+                    <div class="tr"><b>Cotton 58"</b><span>4</span><span>148.00</span></div>
+                    <div class="tr"><b>P/V Suiting</b><span>3</span><span>265.00</span></div>
+                    <div class="tr"><b>Rayon 44"</b><span>6</span><span>96.50</span></div>
+                  </div>
+                  <div class="field-m amt"><span>Order value</span><b class="num">₹ 58,980</b></div>
+                  <div class="sbtn blue">Save indent</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ======================================================= desktop -->
+    <section class="desk" id="desktop">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">On the desktop</p>
+          <h2 class="h-lg">Six softwares, one for each trade</h2>
+          <p class="lede">
+            The apps carry your books into the field. This is where those books are kept —
+            ledger entry, sale bills, GST filing, e-way bills and takada, fitted to the
+            trade you are in.
+          </p>
+        </div>
+
+        <div class="grid6">
+
+          <article class="vert">
+            <h3>Wholesale Cloth</h3>
+            <p>Thaan and metre stock, party ledgers and sale bills through one entry screen.</p>
+            <ul class="tags"><li>Inventory</li><li>Sales tracking</li></ul>
+            <a href="https://www.youtube.com/watch?v=m59yZf7f-rc" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>Watch the demo
+            </a>
+          </article>
+
+          <article class="vert">
+            <h3>Textile Agency</h3>
+            <p>Orders against mills, commission settled by party and rate, and the sales analysis an agency is asked for.</p>
+            <ul class="tags"><li>Commission</li><li>Agents</li></ul>
+            <a href="#contact">Request a demo</a>
+          </article>
+
+          <article class="vert">
+            <h3>Retail Trade — Barcode</h3>
+            <p>Counter billing on a barcode scanner. Print labels, bill through a rush, close with stock that matches the till.</p>
+            <ul class="tags"><li>Barcode</li><li>Point of sale</li></ul>
+            <a href="#contact">Request a demo</a>
+          </article>
+
+          <article class="vert">
+            <h3>Auto Spares</h3>
+            <p>Part numbers and substitutes, vendor accounts, and stock depth a counter can answer from in one look.</p>
+            <ul class="tags"><li>Parts inventory</li><li>Vendors</li></ul>
+            <a href="#contact">Request a demo</a>
+          </article>
+
+          <article class="vert">
+            <h3>FMCG Distribution</h3>
+            <p>Schemes and claims, route and van loading, and the sales analytics a principal company expects each month.</p>
+            <ul class="tags"><li>Supply chain</li><li>Analytics</li></ul>
+            <a href="#contact">Request a demo</a>
+          </article>
+
+          <article class="vert">
+            <h3>Cloth Commission Agent</h3>
+            <p>Written for cloth commission agents alone. It keeps the agent's books the way the trade settles them.</p>
+            <ul class="tags"><li>Commission</li><li>Agent books</li></ul>
+            <a href="#contact">Request a demo</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== firm -->
+    <section class="firm" id="firm">
+      <div class="wrap">
+
+        <figure class="founder">
+          <img src="assets/img/MYPIC.jpeg" width="588" height="520" alt="Sanjay Kumar Saraf">
+          <div>
+            <b>Sanjay Kumar Saraf</b>
+            <span>Founder &amp; CEO, Diginet Data System</span>
+          </div>
+        </figure>
+
+        <div>
+          <p class="eyebrow">The firm</p>
+          <h2 class="h-lg">Written in Patna, supported from Patna</h2>
+          <p class="lede">
+            Diginet Data System has built accounting software since 1998. Accounta is our
+            own product, and the team that writes it is the team that answers the phone —
+            so when something goes wrong during billing hours, you talk to someone who
+            knows the code.
+          </p>
+
+          <div class="stats">
+            <div class="stat"><b>1998</b><span>Building accounting software since</span></div>
+            <div class="stat"><b>3</b><span>Mobile apps on Android and iOS</span></div>
+            <div class="stat"><b>24×7</b><span>Support desk and ticketing</span></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================= contact -->
+    <section class="contact" id="contact">
+      <div class="wrap">
+
+        <div class="section-head">
+          <p class="eyebrow">Contact</p>
+          <h2 class="h-lg">Get a demo of any app</h2>
+          <p class="lede">
+            Tell us which trade you are in and we will walk you through the app built for
+            it. For anything urgent during billing, the phone is faster than the form.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div>
+            <a class="callout" href="tel:+919431238132">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.4 21 3 13.6 3 4.5c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              <span><span>Call the office</span><b class="num">+91 94312 38132</b></span>
+            </a>
+
+            <ul class="facts">
+              <li><dfn>Office</dfn><span>602, 6th Floor, Nutan Plaza,<br>Bander Bagicha, Patna, Bihar 800001</span></li>
+              <li><dfn>Email</dfn><span><a href="mailto:diginetcomputers408@gmail.com">diginetcomputers408@gmail.com</a></span></li>
+              <li><dfn>WhatsApp</dfn><span><a href="https://wa.me/919431238132" target="_blank" rel="noopener">94312 38132</a></span></li>
+              <li><dfn>Support</dfn><span><a href="https://ticketing.accounta.app/#/" target="_blank" rel="noopener">ticketing.accounta.app</a> — open 24×7</span></li>
+              <li><dfn>YouTube</dfn><span><a href="https://www.youtube.com/@sanjaysaraf1928/featured" target="_blank" rel="noopener">Software demos and walkthroughs</a></span></li>
             </ul>
           </div>
 
-          <!-- <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Socials</h4>
-            <p>Feel free to connect with us on our socials.</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div> -->
-          </div>
+          <form class="form php-email-form" action="forms/contact.php" method="post">
+            <h3 class="h-md">Send us a note</h3>
+            <p>Tell us your trade and which app you are interested in.</p>
+
+            <div class="field"><label for="name">Your name</label><input type="text" name="name" id="name" required></div>
+            <div class="field"><label for="email">Your email</label><input type="email" name="email" id="email" required></div>
+            <div class="field"><label for="subject">Subject</label><input type="text" name="subject" id="subject" required></div>
+            <div class="field"><label for="message">Message</label><textarea name="message" id="message" required></textarea></div>
+
+            <div class="loading">Sending your note</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your note is with us. We will reply within one business day.</div>
+
+            <button class="btn btn-primary" type="submit">Send message</button>
+          </form>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="container footer-bottom clearfix">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Diginet Data System</span></strong>. All Rights Reserved
+  </main>
+
+  <!-- ========================================================== footer -->
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot-grid">
+
+        <div>
+          <span class="brand">
+            <img src="assets/img/apps/accounta-icon.png" alt="" width="34" height="34">
+            <b>Accounta</b><span>Since 1998</span>
+          </span>
+          <address>
+            602, 6th Floor, Nutan Plaza<br>
+            Bander Bagicha, Patna, BR 800001, India<br><br>
+            <a href="tel:+919431238132">+91 94312 38132</a><br>
+            <a href="mailto:diginetcomputers408@gmail.com">diginetcomputers408@gmail.com</a>
+          </address>
+        </div>
+
+        <div>
+          <h4>Mobile apps</h4>
+          <ul>
+            <li><a href="#apps">Accounta Takada</a></li>
+            <li><a href="#apps">Accounta Trading</a></li>
+            <li><a href="#apps">Accounta Agency</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#desktop">Desktop software</a></li>
+            <li><a href="#firm">The firm</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://ticketing.accounta.app/#/" target="_blank" rel="noopener">Support desk</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy policy</a></li>
+            <li><a href="termsncondition.html">Terms of service</a></li>
+            <li><a href="refundpolicy.html">Refund policy</a></li>
+          </ul>
+        </div>
+
       </div>
-      <div class="credits">
-        Designed by <a href="https://www.linkedin.com/in/vedant-saraf-8a71b31b4/">Accounta</a>
+
+      <div class="colophon">
+        <span>© Diginet Data System. All rights reserved.</span>
+        <span>Designed by <a href="https://www.linkedin.com/in/vedant-saraf-8a71b31b4/" target="_blank" rel="noopener">Accounta</a></span>
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-  <!-- Custom JS -->
-  <script>
-    // Add smooth scrolling to all links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        
-        const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-        
-        if (targetElement) {
-          window.scrollTo({
-            top: targetElement.offsetTop - 70,
-            behavior: 'smooth'
-          });
-        }
-      });
-    });
-    
-    // Add animation on scroll for elements
-    window.addEventListener('load', () => {
-      AOS.init({
-        duration: 1000,
-        easing: "ease-in-out",
-        once: true,
-        mirror: false
-      });
-    });
-    
-    // Add active class to nav items on scroll
-    window.addEventListener('scroll', () => {
-      const sections = document.querySelectorAll('section');
-      const navLinks = document.querySelectorAll('.nav-link');
-      
-      let current = '';
-      
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        
-        if (window.pageYOffset >= sectionTop - 100) {
-          current = section.getAttribute('id');
-        }
-      });
-      
-      navLinks.forEach((link) => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').includes(current)) {
-          link.classList.add('active');
-        }
-      });
-    });
-  </script>
+  <script src="assets/js/site.js"></script>
 </body>
 
 </html>
